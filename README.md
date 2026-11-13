@@ -1,7 +1,7 @@
 # Day 06 · Data Ingestion Engineering — Bài nộp
 
 **Học viên:** Trần Cảnh Hưng · **MSSV:** 2A202603759 · **Lớp:** L3B  
-**Repo:** https://github.com/danialtranz/K5-L3B-Day06-TranCanhHung-2A202603759-DataIngestionEngineering  
+**Repo:** https://github.com/danialtranz/K5-L3B-Day06-TranCanhHung-2A202603759-DataIngestion  
 **Thông tin nộp:** [STUDENT.md](STUDENT.md) · **Báo cáo:** [report/individual/2A202603759_TranCanhHung.md](report/individual/2A202603759_TranCanhHung.md)
 
 Lab cá nhân: đọc PDF → chuẩn hóa → chunk (A/B/C) → embedding thật → Chroma → benchmark Hit@1 / Evidence Hit@3 + audit thủ công.
