@@ -8,3 +8,24 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+*.db
+starter/data/chroma/
+starter/data/figures/
+starter/data/figures_test/
+# Do not commit copyrighted corpus PDFs
+assets/*.pdf
+starter/src/web/node_modules/
+starter/src/web/dist/
+
+# Keep submission artifacts; ignore bulky/temp result files
+starter/results/*
+!starter/results/.gitkeep
+!starter/results/traces_*.json
+!starter/results/summary_*.json
+!starter/results/summary_latest.json
+!starter/results/audit_*.csv
+!starter/results/audit_*.json
+!starter/results/chunk_stats.json
+!starter/results/index_timings.json
+
+TeckStacks.md

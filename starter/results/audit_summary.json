@@ -1,0 +1,113 @@
+{
+  "run_id": "20261113T212140Z",
+  "method": {
+    "grader": "author",
+    "author_share_approx": "70-80%",
+    "ai_draft_share_approx": "20-30%",
+    "bias_note": "Author is grader of record; self-grading bias possible.",
+    "coherence_pages": [
+      1,
+      2,
+      6,
+      7,
+      9,
+      10,
+      14,
+      19,
+      25,
+      27
+    ],
+    "test_questions": [
+      "q21",
+      "q22",
+      "q23",
+      "q24",
+      "q25"
+    ],
+    "filter_questions": [
+      "q06",
+      "q15",
+      "q17",
+      "q18",
+      "q24",
+      "q25"
+    ]
+  },
+  "by_strategy": {
+    "A": {
+      "coherence_avg_over_2": 1.3,
+      "coherence_n": 10,
+      "coherence_scores": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "metadata_ok": "15/15",
+      "filter_compliant": "N/A",
+      "grounding_counts_0_1_2": {
+        "0": 0,
+        "1": 2,
+        "2": 3
+      },
+      "grounding_avg_over_2": 1.6,
+      "grounding_n": 5
+    },
+    "B": {
+      "coherence_avg_over_2": 1.8,
+      "coherence_n": 10,
+      "coherence_scores": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "metadata_ok": "15/15",
+      "filter_compliant": "N/A",
+      "grounding_counts_0_1_2": {
+        "0": 0,
+        "1": 1,
+        "2": 4
+      },
+      "grounding_avg_over_2": 1.8,
+      "grounding_n": 5
+    },
+    "C": {
+      "coherence_avg_over_2": 1.8,
+      "coherence_n": 10,
+      "coherence_scores": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "metadata_ok": "15/15",
+      "filter_compliant": "6/6",
+      "grounding_counts_0_1_2": {
+        "0": 0,
+        "1": 1,
+        "2": 4
+      },
+      "grounding_avg_over_2": 1.8,
+      "grounding_n": 5
+    }
+  }
+}

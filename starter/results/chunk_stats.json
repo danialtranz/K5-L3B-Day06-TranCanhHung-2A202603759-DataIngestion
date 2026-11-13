@@ -1,0 +1,296 @@
+{
+  "document_id": "wiley_ddbms_ch5",
+  "page_count": 63,
+  "headings": [
+    {
+      "label": "5.1",
+      "title": "TERMINOLOGY",
+      "page": 1
+    },
+    {
+      "label": "5.1.1",
+      "title": "Database",
+      "page": 1
+    },
+    {
+      "label": "5.1.1.1",
+      "title": "Database Consistency",
+      "page": 2
+    },
+    {
+      "label": "5.1.2",
+      "title": "Transaction",
+      "page": 2
+    },
+    {
+      "label": "5.1.2.1",
+      "title": "Transaction Redefined",
+      "page": 6
+    },
+    {
+      "label": "5.2",
+      "title": "MULTITRANSACTION PROCESSING SYSTEMS",
+      "page": 7
+    },
+    {
+      "label": "5.2.1",
+      "title": "Schedule",
+      "page": 7
+    },
+    {
+      "label": "5.2.1.1",
+      "title": "Serial Schedule",
+      "page": 7
+    },
+    {
+      "label": "5.2.1.2",
+      "title": "Parallel Schedule",
+      "page": 7
+    },
+    {
+      "label": "5.2.2",
+      "title": "Conflicts",
+      "page": 9
+    },
+    {
+      "label": "5.2.2.1",
+      "title": "Unrepeatable Reads",
+      "page": 9
+    },
+    {
+      "label": "5.2.2.2",
+      "title": "Reading Uncommitted Data",
+      "page": 9
+    },
+    {
+      "label": "5.2.2.3",
+      "title": "Overwriting Uncommitted Data",
+      "page": 10
+    },
+    {
+      "label": "5.2.3",
+      "title": "Equivalence",
+      "page": 10
+    },
+    {
+      "label": "5.2.4",
+      "title": "Serializable Schedules",
+      "page": 11
+    },
+    {
+      "label": "5.2.4.1",
+      "title": "Serializability in a Centralized System",
+      "page": 12
+    },
+    {
+      "label": "5.2.4.2",
+      "title": "Serializability in a Distributed System",
+      "page": 13
+    },
+    {
+      "label": "5.2.4.3",
+      "title": "Conflict",
+      "page": 14
+    },
+    {
+      "label": "5.2.4.4",
+      "title": "View Serializable Schedules",
+      "page": 14
+    },
+    {
+      "label": "5.2.4.5",
+      "title": "Recoverable Schedules",
+      "page": 15
+    },
+    {
+      "label": "5.2.4.6",
+      "title": "Cascadeless Schedules",
+      "page": 15
+    },
+    {
+      "label": "5.2.5",
+      "title": "Advanced Transaction Types",
+      "page": 15
+    },
+    {
+      "label": "5.2.5.1",
+      "title": "Sagas",
+      "page": 16
+    },
+    {
+      "label": "5.2.5.2",
+      "title": "ConTracts",
+      "page": 17
+    },
+    {
+      "label": "5.2.6",
+      "title": "Transactions in Distributed System",
+      "page": 17
+    },
+    {
+      "label": "5.3",
+      "title": "CENTRALIZED DBE CONCURRENCY CONTROL",
+      "page": 18
+    },
+    {
+      "label": "5.3.1",
+      "title": "Locking-Based Concurrency Control Algorithms",
+      "page": 19
+    },
+    {
+      "label": "5.3.1.1",
+      "title": "One-Phase Locking",
+      "page": 20
+    },
+    {
+      "label": "5.3.1.2",
+      "title": "Two-Phase Locking",
+      "page": 20
+    },
+    {
+      "label": "5.3.1.3",
+      "title": "Locking in Relational Databases",
+      "page": 22
+    },
+    {
+      "label": "5.3.1.4",
+      "title": "Phantom Issue",
+      "page": 24
+    },
+    {
+      "label": "5.3.2",
+      "title": "Timestamp Concurrency Control Algorithms",
+      "page": 27
+    },
+    {
+      "label": "5.3.2.1",
+      "title": "Basic TO Concurrency Control Algorithm",
+      "page": 27
+    },
+    {
+      "label": "5.3.2.2",
+      "title": "Conservative TO Algorithm",
+      "page": 28
+    },
+    {
+      "label": "5.3.2.3",
+      "title": "Multiversion Concurrency Control Algorithm",
+      "page": 30
+    },
+    {
+      "label": "5.3.3",
+      "title": "Optimistic Concurrency Control Algorithm",
+      "page": 31
+    },
+    {
+      "label": "5.3.4",
+      "title": "Concurrency Control in a Real DBMS (Oracle)",
+      "page": 32
+    },
+    {
+      "label": "5.3.4.1",
+      "title": "Oracle Lock Duration",
+      "page": 34
+    },
+    {
+      "label": "5.3.4.2",
+      "title": "Oracle Lock Modes",
+      "page": 34
+    },
+    {
+      "label": "5.3.4.3",
+      "title": "Oracle Lock Types",
+      "page": 34
+    },
+    {
+      "label": "5.3.4.4",
+      "title": "Enforcing Serializability in Oracle",
+      "page": 34
+    },
+    {
+      "label": "5.4",
+      "title": "CONCURRENCY CONTROL IN DISTRIBUTED DATABASE SYSTEMS",
+      "page": 40
+    },
+    {
+      "label": "5.4.1",
+      "title": "Two-Phase Locking in Distributed Systems",
+      "page": 47
+    },
+    {
+      "label": "5.4.1.1",
+      "title": "Centralized 2PL",
+      "page": 47
+    },
+    {
+      "label": "5.4.1.2",
+      "title": "Primary Copy 2PL",
+      "page": 48
+    },
+    {
+      "label": "5.4.1.3",
+      "title": "Distributed 2PL",
+      "page": 48
+    },
+    {
+      "label": "5.4.2",
+      "title": "Distributed Timestamp Concurrency Control",
+      "page": 50
+    },
+    {
+      "label": "5.4.2.1",
+      "title": "Conflict Graphs and Transaction Classes",
+      "page": 53
+    },
+    {
+      "label": "5.4.3",
+      "title": "Distributed Optimistic Concurrency Control",
+      "page": 54
+    },
+    {
+      "label": "5.4.4",
+      "title": "Federated/Multidatabase Concurrency Control",
+      "page": 55
+    },
+    {
+      "label": "5.5",
+      "title": "SUMMARY",
+      "page": 56
+    },
+    {
+      "label": "5.6",
+      "title": "GLOSSARY",
+      "page": 56
+    },
+    {
+      "label": "5.1",
+      "title": "Check the serializability of each one of the following schedules:",
+      "page": 61
+    }
+  ],
+  "figures": 32,
+  "tables": 1,
+  "strategies": {
+    "A": {
+      "n": 419,
+      "params": {
+        "size": 500,
+        "overlap": 80,
+        "min_last": 100
+      }
+    },
+    "B": {
+      "n": 242,
+      "params": {
+        "max_size": 1000,
+        "min_size": 200,
+        "sentence_overlap": 100
+      }
+    },
+    "C": {
+      "n": 242,
+      "note": "B chunks + query filter on metadata.section"
+    }
+  },
+  "ingest_seconds": 4.866971600014949
+}

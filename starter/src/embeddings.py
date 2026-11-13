@@ -1,5 +1,12 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
+"""Local SentenceTransformer embeddings (all-MiniLM-L6-v2, 384-dim)."""
+from __future__ import annotations
+
 from typing import Protocol
+
+from sentence_transformers import SentenceTransformer
+
+DEFAULT_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_DIMENSIONS = 384
 
 
 class Embedder(Protocol):
@@ -15,15 +22,37 @@ class Embedder(Protocol):
         ...
 
 
-class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+class MiniLMEmbedder:
+    """Local MiniLM embedder; fails loudly if model cannot load."""
 
-    def __init__(self, model_name: str) -> None:
-        self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+    def __init__(self, model_name: str = DEFAULT_MODEL) -> None:
+        self.model_name = model_name or DEFAULT_MODEL
+        self.model = SentenceTransformer(self.model_name)
+        dim_fn = getattr(self.model, "get_embedding_dimension", None) or getattr(
+            self.model, "get_sentence_embedding_dimension", None
+        )
+        dim = dim_fn() if callable(dim_fn) else None
+        self.dimensions = int(dim) if dim else DEFAULT_DIMENSIONS
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+        if not texts:
+            return []
+        vectors = self.model.encode(
+            texts,
+            normalize_embeddings=True,
+            show_progress_bar=len(texts) > 32,
+            convert_to_numpy=True,
+        )
+        return [v.tolist() for v in vectors]
 
     def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+        vector = self.model.encode(
+            [question],
+            normalize_embeddings=True,
+            convert_to_numpy=True,
+        )[0]
+        return vector.tolist()
+
+
+# Back-compat alias expected by starter README wording
+MyEmbedder = MiniLMEmbedder

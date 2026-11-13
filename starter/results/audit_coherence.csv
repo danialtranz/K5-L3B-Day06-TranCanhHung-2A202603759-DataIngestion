@@ -1,0 +1,31 @@
+strategy,page,chunk_id,score,reason
+A,1,A_wiley_ddbms_ch5_00000,1,Chapter intro readable but fixed window cuts mid-sentence.
+A,2,A_wiley_ddbms_ch5_00005,0,Starts mid-sentence ('network databases...'); subject unclear without prior chunk.
+A,6,A_wiley_ddbms_ch5_00038,0,Starts mid-word/phrase ('f the transaction'); idea fragmented.
+A,7,A_wiley_ddbms_ch5_00039,1,OLTP focus understandable; ends mid-sentence / partial context.
+A,9,A_wiley_ddbms_ch5_00047,2,Conflict definition + matrix context self-contained.
+A,10,A_wiley_ddbms_ch5_00054,1,Cascading-abort idea present but opens mid-discourse.
+A,14,A_wiley_ddbms_ch5_00085,2,Global serializability definition intact.
+A,19,A_wiley_ddbms_ch5_00127,2,Locking vs timestamping approaches introduced clearly.
+A,25,A_wiley_ddbms_ch5_00165,2,Phantom definition present and readable.
+A,27,A_wiley_ddbms_ch5_00175,2,TO intro keeps subject and purpose.
+B,1,B_wiley_ddbms_ch5_00000,2,Longer heading-aware intro keeps chapter roadmap intact.
+B,2,B_wiley_ddbms_ch5_00003,1,Still mid-sentence start; fuller examples make meaning recoverable.
+B,6,B_wiley_ddbms_ch5_00016,2,Isolation interleaving example stands alone.
+B,7,B_wiley_ddbms_ch5_00023,2,Schedule / serial / parallel definitions complete.
+B,9,B_wiley_ddbms_ch5_00026,2,Conflict definition + isolation need coherent.
+B,10,B_wiley_ddbms_ch5_00030,2,Cascading abort explanation complete despite soft boundary.
+B,14,B_wiley_ddbms_ch5_00048,2,Global serializability + LA/NY example coherent.
+B,19,B_wiley_ddbms_ch5_00071,2,Centralized locking/timestamping overview self-contained.
+B,25,B_wiley_ddbms_ch5_00091,1,Starts mid-word ('nflict'); ANSI/phantom remedies still usable.
+B,27,B_wiley_ddbms_ch5_00096,2,TO definition and timestamp assignment clear.
+C,1,C_wiley_ddbms_ch5_00000,2,Same chunk text as B (shared packing).
+C,2,C_wiley_ddbms_ch5_00003,1,Same as B.
+C,6,C_wiley_ddbms_ch5_00016,2,Same as B.
+C,7,C_wiley_ddbms_ch5_00023,2,Same as B.
+C,9,C_wiley_ddbms_ch5_00026,2,Same as B.
+C,10,C_wiley_ddbms_ch5_00030,2,Same as B.
+C,14,C_wiley_ddbms_ch5_00048,2,Same as B.
+C,19,C_wiley_ddbms_ch5_00071,2,Same as B.
+C,25,C_wiley_ddbms_ch5_00091,1,Same as B.
+C,27,C_wiley_ddbms_ch5_00096,2,Same as B.

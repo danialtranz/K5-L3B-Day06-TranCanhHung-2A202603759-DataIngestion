@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed-size,500,80,"source,page,section",none,all-MiniLM-L6-v2,"Fixed windows split definitions more often → lower Hit@3",8/20,13/20,2/5,3/5,"run_id=20261113T212140Z; chunks≈ from chunk_stats; index A≈9.0s"
+B,heading+paragraph-pack,max=1000 / min=200,sentence_ov=100,"source,page,section",none,all-MiniLM-L6-v2,"Structure-aware chunks keep evidence intact → higher Hit@3 than A",11/20,16/20,2/5,4/5,"Same corpus/model; C copies B vectors; index B≈7.0s"
+C,same as B,max=1000 / min=200,sentence_ov=100,"source,page,section",section query-time filter when present,all-MiniLM-L6-v2,"Filter reduces distractors on section-scoped questions → Hit@1 up on filter items",12/20,16/20,3/5,4/5,"B–C only differs by filter; index C≈7.2s; 6 filter questions (2 test)"

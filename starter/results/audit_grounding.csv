@@ -1,0 +1,16 @@
+strategy,question_id,score,reason
+A,q21,1,Top-3 mentions phantom/locking periphery but misses full gold definition in one chunk.
+A,q22,1,TO/age coordination appears partially; full 'main philosophy' wording not intact in top-3.
+A,q23,2,Top-1 states EP/VP/CP life-cycle phases; sourceable.
+A,q24,2,Top-1 states Oracle exclusive and shared lock modes.
+A,q25,2,Evidence for centralized 2PL/CLM present in top-3 (rank 2).
+B,q21,2,Rank 3 contains phantom definition with predicate P.
+B,q22,1,TO introduced with age/timestamp but philosophy sentence incomplete vs gold.
+B,q23,2,Top-1 includes EP/VP/CP phases.
+B,q24,2,Rank 3 states exclusive and shared lock modes.
+B,q25,2,Top-1 covers centralized 2PL / CLM.
+C,q21,2,Same B packing; phantom definition in top-3.
+C,q22,1,Same miss on full TO philosophy wording.
+C,q23,2,EP/VP/CP in top-1.
+C,q24,2,Exclusive/shared modes in top-1 under section filter.
+C,q25,2,Centralized 2PL/CLM in top-1 under section filter.

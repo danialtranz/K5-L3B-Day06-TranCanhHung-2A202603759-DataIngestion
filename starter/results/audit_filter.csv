@@ -1,0 +1,19 @@
+strategy,question_id,wanted_section,filter_applied,compliant,n_hits,detail
+A,q06,5.2.1,null,N/A,3,Filter not applied for this strategy.
+A,q15,5.2.5,null,N/A,3,Filter not applied for this strategy.
+A,q17,5.3.1,null,N/A,3,Filter not applied for this strategy.
+A,q18,5.3.1,null,N/A,3,Filter not applied for this strategy.
+A,q24,5.3.4,null,N/A,3,Filter not applied for this strategy.
+A,q25,5.4.1,null,N/A,3,Filter not applied for this strategy.
+B,q06,5.2.1,null,N/A,3,Filter not applied for this strategy.
+B,q15,5.2.5,null,N/A,3,Filter not applied for this strategy.
+B,q17,5.3.1,null,N/A,3,Filter not applied for this strategy.
+B,q18,5.3.1,null,N/A,3,Filter not applied for this strategy.
+B,q24,5.3.4,null,N/A,3,Filter not applied for this strategy.
+B,q25,5.4.1,null,N/A,3,Filter not applied for this strategy.
+C,q06,5.2.1,"{""section"": ""5.2.1""}",1,1,sections=['5.2.1']
+C,q15,5.2.5,"{""section"": ""5.2.5""}",1,3,"sections=['5.2.5', '5.2.5', '5.2.5']"
+C,q17,5.3.1,"{""section"": ""5.3.1""}",1,3,"sections=['5.3.1', '5.3.1', '5.3.1']"
+C,q18,5.3.1,"{""section"": ""5.3.1""}",1,3,"sections=['5.3.1', '5.3.1', '5.3.1']"
+C,q24,5.3.4,"{""section"": ""5.3.4""}",1,3,"sections=['5.3.4', '5.3.4', '5.3.4']"
+C,q25,5.4.1,"{""section"": ""5.4.1""}",1,3,"sections=['5.4.1', '5.4.1', '5.4.1']"

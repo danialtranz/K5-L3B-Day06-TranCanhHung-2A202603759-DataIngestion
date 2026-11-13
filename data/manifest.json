@@ -1,0 +1,22 @@
+{
+  "document_id": "wiley_ddbms_ch5",
+  "title": "Distributed Database Management Systems: A Practical Approach — Chapter 5 Controlling Concurrency",
+  "authors": ["Saeed K. Rahimi", "Frank S. Haug"],
+  "publisher": "Wiley-IEEE",
+  "year": 2010,
+  "source_path_or_url": "Local PDF (lab machine). Filename pattern: Distributed Database Management Systems A Practical Approach Management, Rahimi, Haug, Wiley-IEEE, 2010.pdf. Not redistributed in this repo due to copyright.",
+  "license_or_permission": "Copyright © 2010 the IEEE Computer Society / Wiley. Student use for course lab only; do not redistribute the PDF in the submission repo. Graders: verify via questions.json evidence quotes + traces; request local PDF access from student if needed.",
+  "accessed_at": "2026-11-13",
+  "page_count_physical": 63,
+  "page_counting_rule": "PyMuPDF 1-based page indices over the Chapter 5 PDF extract. Count physical PDF pages in the chapter file (63). Content pages used for the ≥30-page requirement exclude none from this extract (chapter body); cover/TOC of the full book are outside this file.",
+  "pages": {
+    "first": 1,
+    "last": 63,
+    "ids": "1..63"
+  },
+  "notes": [
+    "Corpus topic: transaction concurrency control (locking, TO, optimistic, distributed 2PL).",
+    "Normalized text stored in starter/data/lab.db (local; gitignored).",
+    "Benchmark gold: starter/data/questions.json (25 questions)."
+  ]
+}
